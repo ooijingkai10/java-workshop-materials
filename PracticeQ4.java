@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
+//impart java.util.*// import all
+
+
 public class PracticeQ4 {
     public static void main(String[] args) {
 

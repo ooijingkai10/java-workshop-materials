@@ -4,12 +4,13 @@ public class Generics{
    public static void main(String[] args) {
 
        // The defined list below could hold object of any type
-       List names = new ArrayList();
+       List<String> names = new ArrayList<String>();
        names.add("bob");
        names.add("mary");
 
        // We would have to explicitly cast in future usages
        String someName = (String) names.get(0);
+       System.out.println(someName);
 
        // Instead, create a 'contract' with a diamond operator '<>'
        List<String> betterNames = new ArrayList<>();

@@ -28,6 +28,21 @@ public class OrderUtilityTest {
         System.out.println("Test 3:");
         System.out.println("Expected: 10.7625");
         System.out.println("Actual  : " + OrderUtility.calculateAverageOrderTotal(orders));
+    }
+}
 
+
+
+
+class CardOrder extends Order{
+    private int numReferred;
+
+    public CardOrder(String itemName, int numReferred){
+        super.itemName = itemName;
+        super.numReferred = numReferred;
+    }
+
+    public double calculateTotal() {
+        int total
     }
 }
