@@ -5,10 +5,10 @@ public class MakePizza {
         Pizza myPizza = new Pizza(10);
 
         // Printing the pizza
-        System.out.println(myPizza.toString());
+        System.out.println(myPizza);
 
         // Getting the area of the pizza
-        System.out.print("My pizza has an area of: ");
-        System.out.println(myPizza.getPizzaArea());
+        System.out.print("My pizza has an area of: " + myPizza.getPizzaArea());
+        // System.out.println(myPizza.getPizzaArea());
     }
 }

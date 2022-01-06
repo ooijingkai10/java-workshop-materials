@@ -1,3 +1,5 @@
+import java.text.Format;
+
 public class Book {
     private String title;
     private String author;
@@ -21,5 +23,10 @@ public class Book {
     
     public void setAuthor(String author){
         this.author = author;
+    }
+
+    public String getBookName() {
+        return String.format("%s by %s", this.title, this.author);
+        //return (this.title + "by" + this.author);
     }
 }
